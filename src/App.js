@@ -1,14 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Feed from './components/feed'
+import Formulario from './components/form';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p style={{margin: "20px"}}>
+          Edite o arquivo <code>src/App.js</code> e salve para recarregar.
         </p>
         <a
           className="App-link"
@@ -16,9 +20,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Aprenda React
         </a>
+        <Formulario />
+
       </header>
+      <Feed />
+
     </div>
   );
 }
